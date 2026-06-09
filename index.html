@@ -32,7 +32,6 @@
       min-height: 100vh;
     }
 
-    /* ── TOP BAR ─────────────────────────────────── */
     .topbar {
       background: var(--brown);
       color: var(--sand-light);
@@ -43,7 +42,6 @@
       font-weight: 500;
     }
 
-    /* ── NAV ─────────────────────────────────────── */
     nav {
       background: var(--off-white);
       border-bottom: 1px solid var(--border);
@@ -69,7 +67,6 @@
       font-weight: 500;
     }
 
-    /* ── HERO SPLIT ──────────────────────────────── */
     .hero-split {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -122,11 +119,7 @@
       margin-bottom: 28px;
       font-weight: 400;
     }
-    .hero-details {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+    .hero-details { display: flex; flex-wrap: wrap; gap: 12px; }
     .detail-chip {
       display: flex;
       align-items: center;
@@ -141,7 +134,6 @@
     }
     .detail-chip svg { opacity: .9; flex-shrink: 0; }
 
-    /* ── FORM PANEL ──────────────────────────────── */
     .form-panel {
       background: var(--off-white);
       padding: 52px 52px 48px;
@@ -150,9 +142,7 @@
       justify-content: center;
       overflow-y: auto;
     }
-    .form-panel-header {
-      margin-bottom: 28px;
-    }
+    .form-panel-header { margin-bottom: 28px; }
     .form-panel-header .eyebrow {
       font-size: 11px;
       letter-spacing: 1.2px;
@@ -203,7 +193,6 @@
       font-weight: 600;
     }
 
-    /* ── FORM FIELDS ─────────────────────────────── */
     .form-group { margin-bottom: 16px; }
     .form-group label {
       display: block;
@@ -237,7 +226,6 @@
     .form-group input.err { border-color: #DC2626; }
     .err-msg { font-size: 11.5px; color: #DC2626; margin-top: 3px; display: none; }
     .form-group input.err ~ .err-msg { display: block; }
-
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
     .checkbox-group {
@@ -258,7 +246,6 @@
     }
     .checkbox-group label a { color: var(--sand-dark); }
 
-    /* ── CTA BUTTON ──────────────────────────────── */
     .btn-reserve {
       width: 100%;
       background: var(--brown);
@@ -297,7 +284,6 @@
       gap: 5px;
     }
 
-    /* ── INCLUDES SECTION ────────────────────────── */
     .includes-section {
       background: var(--sand);
       padding: 72px 40px;
@@ -351,7 +337,6 @@
       font-size: 18px;
     }
 
-    /* ── ABOUT SECTION ───────────────────────────── */
     .about-section {
       background: var(--off-white);
       padding: 72px 40px;
@@ -412,7 +397,6 @@
       line-height: 1.3;
     }
 
-    /* ── STICKY CTA (mobile) ─────────────────────── */
     .sticky-cta {
       display: none;
       position: fixed;
@@ -443,7 +427,6 @@
       white-space: nowrap;
     }
 
-    /* ── SUCCESS ─────────────────────────────────── */
     .success-panel {
       display: none;
       text-align: center;
@@ -476,7 +459,6 @@
     .success-steps-box p { font-size: 12.5px; font-weight: 600; color: var(--brown); margin-bottom: 8px; }
     .success-steps-box li { font-size: 13px; color: var(--brown-mid); padding: 3px 0; line-height: 1.5; }
 
-    /* ── PROCESSING OVERLAY ──────────────────────── */
     .overlay {
       display: none;
       position: fixed; inset: 0;
@@ -509,7 +491,6 @@
     }
     .overlay-box p { font-size: 13px; color: var(--brown-mid); }
 
-    /* ── FOOTER ──────────────────────────────────── */
     footer {
       background: var(--brown);
       color: rgba(255,255,255,.6);
@@ -524,12 +505,8 @@
       color: var(--white); margin-bottom: 8px;
     }
 
-    /* ── RESPONSIVE ──────────────────────────────── */
     @media (max-width: 900px) {
-      .hero-split {
-        grid-template-columns: 1fr;
-        min-height: unset;
-      }
+      .hero-split { grid-template-columns: 1fr; min-height: unset; }
       .hero-image-inner { min-height: 380px; padding: 40px 28px 36px; }
       .form-panel { padding: 36px 28px; }
       .includes-inner { grid-template-columns: 1fr; gap: 36px; }
@@ -547,41 +524,25 @@
 </head>
 <body>
 
-<!-- ── TOP BAR ──────────────────────────────────────────────────── -->
-<div class="topbar">
-  ✦ CUPOS LIMITADOS — Asegura el tuyo hoy ✦
-</div>
+<div class="topbar">✦ CUPOS LIMITADOS — Asegura el tuyo hoy ✦</div>
 
-<!-- ── NAV ──────────────────────────────────────────────────────── -->
 <nav>
-  <a class="brand" href="https://www.cristoffaniniconsulting.com">
-    Cristoffanini<span>Consulting</span>
-  </a>
+  <a class="brand" href="https://www.cristoffaniniconsulting.com">Cristoffanini<span>Consulting</span></a>
   <a class="nav-link" href="https://www.cristoffaniniconsulting.com">WWW.CRISTOFFANINICONSULTING.COM</a>
 </nav>
 
-<!-- ── HERO SPLIT ────────────────────────────────────────────────── -->
 <section class="hero-split" id="inscripcion">
-
-  <!-- LEFT: visual -->
   <div class="hero-image">
     <div class="hero-image-inner">
       <div class="hero-tag">✦ Masterclass Presencial</div>
-
-      <!-- Decorative stars (SVG) -->
       <svg style="position:absolute;top:80px;right:40px;opacity:.3" width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M30 4L33.5 23.5L53 27L33.5 30.5L30 50L26.5 30.5L7 27L26.5 23.5L30 4Z" fill="white"/></svg>
       <svg style="position:absolute;top:140px;right:110px;opacity:.2" width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M15 2L17 11.5L26.5 13.5L17 15.5L15 25L13 15.5L3.5 13.5L13 11.5L15 2Z" fill="white"/></svg>
-
-      <div class="hero-title">
-        ✦ MASTERCLASS ✦
-      </div>
-      <div class="hero-subtitle">
-        "Potencia tu perfil &<br>encuentra el trabajo que mereces"
-      </div>
+      <div class="hero-title">✦ MASTERCLASS ✦</div>
+      <div class="hero-subtitle">"Potencia tu perfil &<br>encuentra el trabajo que mereces"</div>
       <div class="hero-details">
         <div class="detail-chip">
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          3 de Junio · 9:00 – 11:30 AM
+          7 de julio · 9:00 – 11:30 AM
         </div>
         <div class="detail-chip">
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -595,15 +556,11 @@
     </div>
   </div>
 
-  <!-- RIGHT: form -->
   <div class="form-panel">
     <div class="form-panel-header">
       <div class="eyebrow">✦ Reserva tu cupo</div>
       <h2>¡Hola! 😊 Gracias por tu interés</h2>
-      <p>
-        Completa el formulario para reservar tu lugar en la masterclass.
-        Una vez inscrita, recibirás toda la información por email.
-      </p>
+      <p>Completa el formulario para reservar tu lugar en la masterclass. Una vez inscrita, recibirás toda la información por email.</p>
     </div>
 
     <div class="price-line">
@@ -613,14 +570,12 @@
       <span class="cupos">⚡ Últimos cupos</span>
     </div>
 
-    <!-- FORM -->
     <form id="reg-form" novalidate>
       <div class="form-group">
         <label for="nombre">Nombre completo <span class="req">*</span></label>
         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required autocomplete="name" />
         <span class="err-msg">Por favor ingresa tu nombre completo</span>
       </div>
-
       <div class="form-row">
         <div class="form-group">
           <label for="email">Correo electrónico <span class="req">*</span></label>
@@ -633,7 +588,6 @@
           <span class="err-msg">Ingresa tu teléfono</span>
         </div>
       </div>
-
       <div class="form-group">
         <label for="profesion">Profesión / Área laboral</label>
         <select id="profesion" name="profesion">
@@ -650,20 +604,14 @@
           <option>Otro</option>
         </select>
       </div>
-
       <div class="form-group">
         <label for="expectativa">¿Qué esperas llevar de esta masterclass? <span style="color:var(--sand-dark);font-size:11px;font-weight:400">(opcional)</span></label>
         <textarea id="expectativa" name="expectativa" rows="2" placeholder="Cuéntame brevemente..." style="resize:vertical"></textarea>
       </div>
-
       <div class="checkbox-group">
         <input type="checkbox" id="terminos" name="terminos" required />
-        <label for="terminos">
-          Acepto los <a href="#" onclick="return false">Términos y Condiciones</a>.
-          Entiendo que recibiré un formulario de pago y confirmación de inscripción con todos los detalles del evento. ✨
-        </label>
+        <label for="terminos">Acepto los <a href="#" onclick="return false">Términos y Condiciones</a>. Entiendo que recibiré un formulario de pago y confirmación de inscripción con todos los detalles del evento. ✨</label>
       </div>
-
       <button type="submit" class="btn-reserve" id="btn-reservar">
         <span id="btn-text">Reservar mi cupo →</span>
         <span id="btn-loading" style="display:none;align-items:center;gap:8px">
@@ -671,14 +619,12 @@
           Enviando...
         </span>
       </button>
-
       <div class="secure-note">
         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         Tus datos están protegidos · Sin spam
       </div>
     </form>
 
-    <!-- SUCCESS STATE -->
     <div class="success-panel" id="success-panel">
       <div class="success-icon">🎉</div>
       <h3>¡Inscripción recibida!</h3>
@@ -693,58 +639,33 @@
           <li>🔔 Te enviamos un recordatorio el día anterior</li>
         </ol>
       </div>
-      <p style="margin-top:16px;font-size:12.5px">
-        ¿Consultas? Escríbeme al
-        <a href="https://wa.me/56989052079" style="color:var(--sand-dark);font-weight:600">+56 9 8905 2079</a>
-      </p>
+      <p style="margin-top:16px;font-size:12.5px">¿Consultas? Escríbeme al <a href="https://wa.me/56989052079" style="color:var(--sand-dark);font-weight:600">+56 9 8905 2079</a></p>
     </div>
   </div>
 </section>
 
-<!-- ── INCLUDES ───────────────────────────────────────────────────── -->
 <section class="includes-section">
   <div class="includes-inner">
     <div class="includes-text">
       <div class="section-label">✦ Lo que incluye</div>
       <h2>Una experiencia completa para transformar tu carrera</h2>
-      <p>
-        Más que una masterclass: una mañana de conexión, aprendizaje y herramientas concretas para potenciar tu perfil profesional desde hoy.
-      </p>
+      <p>Más que una masterclass: una mañana de conexión, aprendizaje y herramientas concretas para potenciar tu perfil profesional desde hoy.</p>
     </div>
     <ul class="includes-list">
-      <li>
-        <div class="icon-wrap">🥐</div>
-        Brunch incluido
-      </li>
-      <li>
-        <div class="icon-wrap">📓</div>
-        Workbook práctico
-      </li>
-      <li>
-        <div class="icon-wrap">📊</div>
-        PPT exclusivo + Kit de regalos
-      </li>
-      <li>
-        <div class="icon-wrap">💼</div>
-        Tips de coaching laboral
-      </li>
-      <li>
-        <div class="icon-wrap">🤝</div>
-        Networking con otras profesionales
-      </li>
+      <li><div class="icon-wrap">🥐</div>Brunch incluido</li>
+      <li><div class="icon-wrap">📓</div>Workbook práctico</li>
+      <li><div class="icon-wrap">📊</div>PPT exclusivo + Kit de regalos</li>
+      <li><div class="icon-wrap">💼</div>Tips de coaching laboral</li>
+      <li><div class="icon-wrap">🤝</div>Networking con otras profesionales</li>
     </ul>
   </div>
 </section>
 
-<!-- ── ABOUT ──────────────────────────────────────────────────────── -->
 <section class="about-section">
   <div class="about-inner">
     <div class="section-label">✦ Detalles del evento</div>
     <h2>Todo lo que necesitas saber</h2>
-    <p>
-      La masterclass <em>"Potencia tu perfil & encuentra el trabajo que mereces"</em> es un espacio íntimo y práctico donde aprenderás a destacar tu propuesta de valor, optimizar tu LinkedIn y conectar con oportunidades reales.
-    </p>
-
+    <p>La masterclass <em>"Potencia tu perfil & encuentra el trabajo que mereces"</em> es un espacio íntimo y práctico donde aprenderás a destacar tu propuesta de valor, optimizar tu LinkedIn y conectar con oportunidades reales.</p>
     <div class="info-cards">
       <div class="info-card">
         <div class="ic-icon">📅</div>
@@ -765,17 +686,12 @@
   </div>
 </section>
 
-<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
 <footer>
   <div class="f-brand">CristoffaniniConsulting</div>
-  <p style="margin-bottom:8px">
-    <a href="https://www.cristoffaniniconsulting.com">www.cristoffaniniconsulting.com</a>
-    · <a href="https://wa.me/56989052079">+56 9 8905 2079</a>
-  </p>
+  <p style="margin-bottom:8px"><a href="https://www.cristoffaniniconsulting.com">www.cristoffaniniconsulting.com</a> · <a href="https://wa.me/56989052079">+56 9 8905 2079</a></p>
   <p>© 2026 · <a href="#">Términos</a> · <a href="#">Privacidad</a></p>
 </footer>
 
-<!-- ── STICKY CTA (mobile) ────────────────────────────────────────── -->
 <div class="sticky-cta">
   <div>
     <div style="font-size:11px;color:rgba(255,255,255,.5);margin-bottom:2px">Masterclass · 3 Junio</div>
@@ -784,7 +700,6 @@
   <a href="#inscripcion">Reservar cupo →</a>
 </div>
 
-<!-- ── OVERLAY ────────────────────────────────────────────────────── -->
 <div class="overlay" id="overlay">
   <div class="overlay-box">
     <div class="spinner"></div>
@@ -793,16 +708,8 @@
   </div>
 </div>
 
-<!-- ── SCRIPT ─────────────────────────────────────────────────────── -->
 <script>
-  // ─────────────────────────────────────────────────────────────
-  // ⚙️  CONFIGURACIÓN — edita antes de publicar
-  // ─────────────────────────────────────────────────────────────
-  const CONFIG = {
-    // URL webhook de Make — crea un "Custom webhook" en Make y pega aquí
-    makeWebhookUrl: 'https://hook.us1.make.com/TU_WEBHOOK_ID_AQUI',
-  };
-  // ─────────────────────────────────────────────────────────────
+  const FORMSPREE_URL = 'https://formspree.io/f/xnjyvrka';
 
   const form      = document.getElementById('reg-form');
   const overlay   = document.getElementById('overlay');
@@ -840,44 +747,48 @@
       return;
     }
 
+    const nombre   = document.getElementById('nombre').value.trim();
+    const email    = document.getElementById('email').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+
     const data = {
-      nombre:       document.getElementById('nombre').value.trim(),
-      email:        document.getElementById('email').value.trim(),
-      telefono:     document.getElementById('telefono').value.trim(),
+      nombre, email, telefono,
       profesion:    document.getElementById('profesion').value,
       expectativa:  document.getElementById('expectativa').value.trim(),
       evento:       'Masterclass: Potencia tu Perfil & Encuentra el Trabajo que Mereces',
-      fecha_evento: '2026-06-03',
-      valor:        '80000 CLP',
-      timestamp:    new Date().toISOString(),
+      fecha_evento: '3 de Junio · 9:00 – 11:30 AM',
+      valor:        '$80.000 CLP',
+      lugar:        'Quinoa Café, Luis Pasteur 5393, Vitacura',
     };
 
-    // Mostrar loading
     btnMain.disabled = true;
     btnText.style.display = 'none';
     btnLoad.style.display = 'flex';
     overlay.classList.add('show');
 
     try {
-      await fetch(CONFIG.makeWebhookUrl, {
+      const res = await fetch(FORMSPREE_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(data),
-        mode: 'no-cors',
       });
+      if (!res.ok) throw new Error('error');
     } catch (err) {
-      console.warn('Webhook error:', err);
+      overlay.classList.remove('show');
+      btnMain.disabled = false;
+      btnText.style.display = 'inline';
+      btnLoad.style.display = 'none';
+      alert('Hubo un problema al enviar. Por favor intenta de nuevo o escríbeme al +56 9 8905 2079.');
+      return;
     }
 
     overlay.classList.remove('show');
-
-    // Mostrar éxito
     form.style.display = 'none';
     document.querySelector('.price-line').style.display = 'none';
     document.querySelector('.form-panel-header').style.display = 'none';
     successEl.style.display = 'block';
-    document.getElementById('nombre-confirmado').textContent = data.nombre.split(' ')[0];
-    document.getElementById('email-confirmado').textContent = data.email;
+    document.getElementById('nombre-confirmado').textContent = nombre.split(' ')[0];
+    document.getElementById('email-confirmado').textContent = email;
     successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
 </script>
